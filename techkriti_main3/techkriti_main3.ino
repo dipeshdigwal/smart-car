@@ -90,7 +90,7 @@ void loop() {
     }
   }
   
-  /*if((b+x)==8){
+  if((b+x)==8){
     if(flag_3<5){
       while((b+x)==8){
         move_straight();
@@ -285,7 +285,7 @@ void loop() {
   }
   
   //PHASE 2:
-  /*else if(flag_3==2 || flag_3==3){
+  else if(flag_3==2 || flag_3==3){
     if(flag_4==0){
       ultrasonic_sens_val();
       if(distance[0]<20){
@@ -411,10 +411,10 @@ void loop() {
       }
     }  
   }
-  }*/
+  }
     
   //PHASE 3:
-  /*else if(flag_3==4){
+  else if(flag_3==4){
     if(b==0){
       Serial.println("b==0");
       Serial.println("moving straight");
@@ -546,7 +546,7 @@ void loop() {
     digitalWrite(leds[0],HIGH);
     display_number_boxes();
   }
-}*/
+}
 void move_straight(){
   Serial.println(flag);
   analogWrite(motor_driver[0],max_speed);
